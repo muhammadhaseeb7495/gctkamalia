@@ -4,6 +4,14 @@ const helmet = require('helmet'), compression = require('compression'), rateLimi
 const cookieParser = require('cookie-parser'), bcrypt = require('bcryptjs'), jwt = require('jsonwebtoken');
 const Database = require('better-sqlite3');
 
+/* Load .env if it exists (works on every Node version; hosting-platform variables win) */
+try {
+  for (const line of fs.readFileSync(path.join(__dirname, '.env'), 'utf8').split(/\r?\n/)) {
+    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*?)\s*$/);
+    if (m && !line.trim().startsWith('#') && !(m[1] in process.env)) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+  }
+} catch (e) { /* no .env file: use the platform's variables */ }
+
 const prod = process.env.NODE_ENV === 'production';
 const PORT = +process.env.PORT || 3000;
 const ADMIN = (process.env.ADMIN_EMAIL || '').trim().toLowerCase();
@@ -45,7 +53,7 @@ app.use(helmet({
   } },
   crossOriginEmbedderPolicy: false
 }));
-if (prod) app.use((req, res, next) => req.secure ? next() : res.redirect(301, 'https://' + req.headers.host + req.url)); // force HTTPS
+if (prod) app.use((req, res, next) => req.headers['x-forwarded-proto'] === 'http' ? res.redirect(301, 'https://' + req.headers.host + req.url) : next()); // force HTTPS behind a proxy
 app.use(compression());
 app.use(express.json({ limit: '20kb' }));
 app.use(cookieParser());
