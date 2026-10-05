@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admission | GCT Kamalia</title>
+<meta name="description" content="Admission information and inquiry form for Government College of Technology, Kamalia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16252b; --teal:#0f4c5c; --teal-d:#0a3641; --sign:#f2b705;
+  --paper:#f3f6f7; --white:#fff; --mute:#56676e; --line:#d3dde0;
+  --head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",Arial,Helvetica,sans-serif;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;font:400 1.0625rem/1.6 var(--body);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sign);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+header.bar{background:var(--teal-d);color:#fff}
+header.bar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding-top:.75rem;padding-bottom:.75rem}
+.brand{font:700 1.25rem/1 var(--head);letter-spacing:.02em;text-decoration:none}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:500}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-underline-offset:4px}
+
+.hero{background:var(--teal);color:#fff;padding:3.5rem 0 4rem}
+.hero h1{font:700 clamp(2.4rem,7vw,4.5rem)/.95 var(--head);margin:0 0 1rem}
+.hero p{max-width:34rem;margin:0;color:#d6e6ea;font-size:1.15rem}
+
+section{padding:3rem 0}
+h2{font:700 2rem/1.1 var(--head);color:var(--teal);margin:0 0 1rem}
+p{margin:0 0 1rem;max-width:42rem}
+.two{display:grid;gap:2.5rem;grid-template-columns:1fr}
+@media(min-width:800px){.two{grid-template-columns:1fr 1fr}}
+
+.notice{border-left:6px solid var(--sign);padding:.25rem 0 .25rem 1rem;margin:0 0 1.5rem}
+.notice strong{font:700 1.3rem/1.2 var(--head);display:block}
+
+dl{margin:0 0 1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.25rem}
+dt{font-weight:600;color:var(--teal)}
+dd{margin:0;overflow-wrap:anywhere}
+
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:.7rem 1.2rem;border:0;border-radius:.3rem;text-decoration:none;font:600 1rem var(--body);cursor:pointer;margin:.25rem .5rem 0 0}
+.btn:hover{background:var(--teal-d)}
+.btn.sign{background:var(--sign);color:var(--ink)}
+
+form{background:var(--white);border:1px solid var(--line);border-radius:.5rem;padding:1.5rem}
+label{display:block;font-weight:600;margin:0 0 .25rem}
+input,select,textarea{width:100%;font:inherit;padding:.6rem .7rem;border:1px solid #9fb0b6;border-radius:.3rem;background:#fff;color:var(--ink);margin-bottom:1rem}
+.hint{color:var(--mute);font-size:.95rem;margin:-.5rem 0 1rem}
+#msg{margin:1rem 0 0;font-weight:600;color:var(--teal)}
+
+footer{background:var(--ink);color:#b9c7cc;padding:1.75rem 0;font-size:.95rem}
+</style>
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0f4c5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Admission | GCT Kamalia">
+<meta property="og:description" content="Government College of Technology, Kamalia: diploma programs and admission under TEVTA Punjab.">
+<!-- After you get a domain, add: <link rel="canonical" href="https://YOUR-DOMAIN/admission.html"> -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="extra.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">GCT Kamalia</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="admission.html" aria-current="page">Admission</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="tools"><a id="acct" href="login.html">Login</a><button id="lang" data-nolang type="button">اردو</button><button id="theme" data-nolang type="button" aria-label="Dark mode">Dark</button></div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Admission</h1>
+      <p>Apply for a diploma program at Government College of Technology, Kamalia. Send an inquiry below or call the admission office.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap two">
+      <div>
+        <h2>Before you apply</h2>
+        <div class="notice">
+          <strong>Eligibility</strong>
+          Matric (Science group) or equivalent, with the minimum passing marks required by PBTE. Age limit as per TEVTA/PBTE rules. Admission is on merit, with open merit and reserved quota seats as per government policy.
+        </div>
+        <p>Fee, required documents and the last date can change each session. Please call the admission office to confirm them.</p>
+        <!-- Add your own eligibility, documents and fee details here once you have them -->
+        <h2>Admission office</h2>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+923345095109">0334-5095109</a></dd>
+          <dt>Landline</dt><dd><a href="tel:+92463704421">046-3704421</a></dd>
+          <dt>Email</dt><dd><a href="mailto:gctkamalia@yahoo.com">gctkamalia@yahoo.com</a></dd>
+          <dt>Address</dt><dd>Stop # 3, Chichawatni Road, Kamalia, District Toba Tek Singh</dd>
+        </dl>
+        <a class="btn sign" href="tel:+923345095109">Call admission office</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=30.71463,72.66192" target="_blank" rel="noopener">Get directions</a>
+      </div>
+
+      <div>
+        <h2>Send an inquiry</h2>
+        <form id="inq">
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required>
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+
+          <label for="prog">Program you are interested in</label>
+          <select id="prog" name="prog">
+            <option>Chemical Technology</option>
+            <option>Civil Technology</option>
+            <option>Computer Information Technology</option>
+            <option>Textile Technology</option>
+            <option>Not sure yet</option>
+          </select>
+
+          <label for="cls">Last class passed and marks</label>
+          <input id="cls" name="cls" placeholder="Example: Matric, 780 / 1100">
+
+          <label for="note">Question (optional)</label>
+          <textarea id="note" name="note" rows="3"></textarea>
+
+          <button class="btn" type="submit">Send inquiry by email</button>
+          <p class="hint">The college saves your inquiry and will contact you. If the server is unavailable, your email app opens instead.</p>
+          <p id="msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>&copy; 2026 Government College of Technology, Kamalia. A TEVTA Punjab institution.</span><span><a href="media.html">Media</a><a href="privacy.html">Privacy</a><a href="https://www.facebook.com/people/GCT-Kamalia-College/61565837864759/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@gctkamaliacollege" target="_blank" rel="noopener">TikTok</a></span></div>
+</footer>
+
+<script>
+document.getElementById('inq').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target, m = document.getElementById('msg');
+  var data = {name: f.name.value, phone: f.phone.value, program: f.prog.value, lastClass: f.cls.value, note: f.note.value};
+  fetch('/api/inquiries', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})
+    .then(function (r) { return r.json().then(function (j) {
+      if (r.ok) { m.textContent = 'Your inquiry was received. The admission office will contact you.'; f.reset(); }
+      else { m.textContent = j.error || 'Could not send the inquiry.'; }
+    }); })
+    .catch(function () {
+      var body = 'Name: ' + data.name + '\nPhone: ' + data.phone + '\nProgram: ' + data.program + '\nLast class and marks: ' + data.lastClass + '\nQuestion: ' + data.note;
+      window.location.href = 'mailto:gctkamalia@yahoo.com?subject=' + encodeURIComponent('Admission inquiry: ' + data.name) + '&body=' + encodeURIComponent(body);
+      m.textContent = 'Your email app should open now. Press send there to finish.';
+    });
+});
+</script>
+</body>
+</html>

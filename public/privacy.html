@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy | GCT Kamalia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16252b; --teal:#0f4c5c; --teal-d:#0a3641; --sign:#f2b705;
+  --paper:#f3f6f7; --white:#fff; --mute:#56676e; --line:#d3dde0;
+  --head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",Arial,Helvetica,sans-serif;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;font:400 1.0625rem/1.6 var(--body);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sign);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+header.bar{background:var(--teal-d);color:#fff}
+header.bar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding-top:.75rem;padding-bottom:.75rem}
+.brand{font:700 1.25rem/1 var(--head);letter-spacing:.02em;text-decoration:none}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:500}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-underline-offset:4px}
+
+.hero{background:var(--teal);color:#fff;padding:3.5rem 0 4rem}
+.hero h1{font:700 clamp(2.4rem,7vw,4.5rem)/.95 var(--head);margin:0 0 1rem}
+.hero p{max-width:34rem;margin:0;color:#d6e6ea;font-size:1.15rem}
+
+section{padding:3rem 0}
+h2{font:700 2rem/1.1 var(--head);color:var(--teal);margin:0 0 1rem}
+p{margin:0 0 1rem;max-width:42rem}
+.two{display:grid;gap:2.5rem;grid-template-columns:1fr}
+@media(min-width:800px){.two{grid-template-columns:1fr 1fr}}
+
+.notice{border-left:6px solid var(--sign);padding:.25rem 0 .25rem 1rem;margin:0 0 1.5rem}
+.notice strong{font:700 1.3rem/1.2 var(--head);display:block}
+
+dl{margin:0 0 1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.25rem}
+dt{font-weight:600;color:var(--teal)}
+dd{margin:0;overflow-wrap:anywhere}
+
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:.7rem 1.2rem;border:0;border-radius:.3rem;text-decoration:none;font:600 1rem var(--body);cursor:pointer;margin:.25rem .5rem 0 0}
+.btn:hover{background:var(--teal-d)}
+.btn.sign{background:var(--sign);color:var(--ink)}
+
+form{background:var(--white);border:1px solid var(--line);border-radius:.5rem;padding:1.5rem}
+label{display:block;font-weight:600;margin:0 0 .25rem}
+input,select,textarea{width:100%;font:inherit;padding:.6rem .7rem;border:1px solid #9fb0b6;border-radius:.3rem;background:#fff;color:var(--ink);margin-bottom:1rem}
+.hint{color:var(--mute);font-size:.95rem;margin:-.5rem 0 1rem}
+#msg{margin:1rem 0 0;font-weight:600;color:var(--teal)}
+
+footer{background:var(--ink);color:#b9c7cc;padding:1.75rem 0;font-size:.95rem}
+
+.dept{border-left:6px solid var(--sign);padding:.25rem 0 .25rem 1rem;margin-bottom:1.5rem}
+.dept h3{font:700 1.5rem/1.2 var(--head);margin:0 0 .25rem}
+.dept p{color:var(--mute);margin:0}
+</style>
+<meta name="description" content="How the GCT Kamalia website handles your information.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0f4c5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy | GCT Kamalia">
+<meta property="og:description" content="How the GCT Kamalia website handles your information.">
+<!-- After you get a domain, add: <link rel="canonical" href="https://YOUR-DOMAIN/privacy.html"> -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="extra.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">GCT Kamalia</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="tools"><a id="acct" href="login.html">Login</a><button id="lang" data-nolang type="button">اردو</button><button id="theme" data-nolang type="button" aria-label="Dark mode">Dark</button></div>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Privacy</h1>
+      <p>How this website handles your information.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap">
+      <h2>What this site stores</h2>
+      <p>Inquiry form: your details are placed in an email that you send yourself. This website does not receive or store them.</p>
+      <p>Reviews: saved only in your own browser.</p>
+      <p>Settings: your choice of dark mode, language and cookies is saved in your browser so the site remembers it.</p>
+      <h2>Analytics</h2>
+      <p>If analytics is switched on, it loads only after you press Accept in the cookie notice. You can clear your browser data to change your choice.</p>
+      <h2>Questions</h2>
+      <p>Write to <a href="mailto:gctkamalia@yahoo.com">gctkamalia@yahoo.com</a>.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><span>&copy; 2026 Government College of Technology, Kamalia. A TEVTA Punjab institution.</span><span><a href="media.html">Media</a><a href="privacy.html">Privacy</a><a href="https://www.facebook.com/people/GCT-Kamalia-College/61565837864759/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@gctkamaliacollege" target="_blank" rel="noopener">TikTok</a></span></div>
+</footer>
+</body>
+</html>
